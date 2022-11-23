@@ -42,6 +42,15 @@ class ProductPage(BasePage):
         book_price = self.is_element_present(*ProductPageLocators.ADDED_BOOK_PRICE)
         assert book_price, "No added price"
 
+    def should_not_be_success_message(self):
+        assert self.is_not_element_present(*ProductPageLocators.ALERT_MESSAGE), \
+            "Success message is presented, but should not be"
+
+    def should_not_stay_be_success_message(self):
+        assert self.is_disappeared(*ProductPageLocators.SUCCESS_MESSAGE), \
+            "Success message is not disappeared, but should be"
+
+
 
 
 
