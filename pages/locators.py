@@ -24,6 +24,8 @@ class ProductPageLocators:
     ALERT_BOOK_PRICE = (By.CSS_SELECTOR, ".alert-info .alertinner strong")
     ADDED_BOOK_NAME = (By.CSS_SELECTOR, '.col-sm-4 a')
     ADDED_BOOK_PRICE = (By.CSS_SELECTOR, '.col-sm-1 p')
+    CLEAR_BASKET = (By.CSS_SELECTOR, '#content_inner p')
+    BUTTON_CKECKOUT = (By.CLASS_NAME, 'btn-primary')
 
 
 class BasePageLocators():
